@@ -43,4 +43,10 @@ public class Inventory {
         }
         System.out.println("Item not found.");
     }
+
+    @Override
+    public String toString() {
+        return "Inventory [items=" + items + "]";
+    }
+    
 }

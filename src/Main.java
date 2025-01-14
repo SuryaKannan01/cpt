@@ -33,13 +33,13 @@ class Main {
                     inventory.removeItem(removeName);
                     break;
                 case 3:
-                    inventory.viewInventory();
+                    System.out.println(inventory.toString());
                     break;
                 case 4:
                     System.out.print("Enter item name to search: ");
                     String searchName = scanner.nextLine();
                     inventory.searchItem(searchName);
-                    break;
+                    return;
                 case 5:
                     System.out.println("Exiting system. Goodbye!");
                     scanner.close();
