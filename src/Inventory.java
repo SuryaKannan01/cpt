@@ -34,19 +34,21 @@ public class Inventory {
         }
     }
 
-    public void searchItem(String name) {
-        for (Item item : items) {
-            if (item.getName().equalsIgnoreCase(name)) {
-                System.out.println(item);
-                return;
-            }
-        }
-        System.out.println("Item not found.");
-    }
-
     @Override
     public String toString() {
         return "Inventory [items=" + items + "]";
     }
-    
+    public void searchItem(String name) {
+        boolean found = false;
+        for (Item item : items) {
+            if (item.getName().equals(name)) {
+                System.out.println("Item found: " + item.getName() + ", Price: " + item.getPrice() + ", Quantity: " + item.getQuantity());
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Item not found.");
+        }
+    }
 }
