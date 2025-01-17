@@ -1,5 +1,10 @@
 // Inventory.java
 
+/*
+ * Name: Surya Kannan
+ * Date: 01/17/2025
+ * Inventory
+ */
 import java.util.ArrayList;
 public class Inventory {
     private ArrayList<Item> items;

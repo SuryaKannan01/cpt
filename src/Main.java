@@ -39,7 +39,6 @@ class Main {
                     System.out.print("Enter item name to search: ");
                     String searchName = scanner.nextLine();
                     inventory.searchItem(searchName);
-                    return;
                 case 5:
                     System.out.println("Exiting system. Goodbye!");
                     scanner.close();
